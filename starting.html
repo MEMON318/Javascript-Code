@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="starting.css">
+
+    <!-- External JavaScript -->
+    <script src="starting.js" defer></script>
+</head>
+<body>
+
+    <div class="form-container">
+
+        <h2>Registration Form</h2>
+
+        <form id="registrationForm">
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    minlength="6"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" required>
+                    <option value="">Select your country</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                    <option value="Australia">Australia</option>
+                </select>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="agree" required>
+                <label for="agree">
+                    I agree to the terms and conditions
+                </label>
+            </div>
+
+            <button type="submit">Register</button>
+
+            <p id="message" role="status" aria-live="polite"></p>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
